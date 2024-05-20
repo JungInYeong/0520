@@ -56,12 +56,16 @@ int main()
 	cout << endl;
 	Candy* can1 = (Candy*)snackbasket[0];
 	can1->printCompany();
+	cout << endl;
 	Candy* can2 = (Candy*)snackbasket[1];
 	can2->printCompany();
+	cout << endl;
 	Chocolate* choco1 = (Chocolate*)snackbasket[2];
 	choco1->printCompany();
+	cout << endl;
 	Chocolate* choco2 = (Chocolate*)snackbasket[3];
-	choco2->printCompany();	
+	choco2->printCompany();
+	cout << endl;
 	return 0;
 }
 
