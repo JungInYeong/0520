@@ -61,19 +61,22 @@ int main()
 	cout << endl;
 
 	// names[] 배열 이용하여 각 class 생성 
-	Teacher teacher = Teacher(names[0]);
-	Student student1 = Student(names[1]);
-	Student student2 = Student(names[2]);
+	Teacher* teacher = new Teacher(names[0]);
+	Student* student1 = new Student(names[1]);
+	Student* student2 = new Student(names[2]);
 
 
 	// pList에 할당하는 코드 추가
-	pList[0] = &teacher;
-	pList[1] = &student1;
-	pList[2] = &student2;
+	pList[0] = teacher;
+	pList[1] = student1;
+	pList[2] = student2;
+
+	// overriding : virtual 을 사용하지 않으면, 부모 메소드가 작동한다.
+	// 이유? -> 동적 바인딩 : 런 타임에서 실제 주소값에 해당하는 인스턴스를 확인
 
 	for (auto p : pList)
-	{
-		p->intro();
+	{				// <동적바인딩> - 실행 중에 = 런 타임
+		p->intro(); // 주소값을 찾아가서 teacher 인스턴스의 내용 확인 (선생입니다 실행)
 	}
 	cout << endl;
 	// 각 class의 고유 함수 실행 (teach(), learn(), learn())
