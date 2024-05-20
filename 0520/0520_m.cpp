@@ -56,6 +56,8 @@ int main()
 	cout << endl;
 	Candy* can1 = (Candy*)snackbasket[0];
 	can1->printCompany();
+	// ((Candy*)snackbasket[0])->printCompany(); 이것도 가능
+
 	cout << endl;
 	Candy* can2 = (Candy*)snackbasket[1];
 	can2->printCompany();

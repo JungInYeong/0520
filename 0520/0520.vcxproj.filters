@@ -18,5 +18,8 @@
     <ClCompile Include="0520_m.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0520_m2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
