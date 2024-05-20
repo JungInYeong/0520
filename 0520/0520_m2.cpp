@@ -73,6 +73,7 @@ int main()
 
 	// overriding : virtual 을 사용하지 않으면, 부모 메소드가 작동한다.
 	// 이유? -> 동적 바인딩 : 런 타임에서 실제 주소값에 해당하는 인스턴스를 확인
+	// static_cast, dynamic_cast https://hwan-shell.tistory.com/211
 
 	for (auto p : pList)
 	{				// <동적바인딩> - 실행 중에 = 런 타임
