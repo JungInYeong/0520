@@ -1,4 +1,4 @@
-// ½Ç½À1
+ï»¿// ì‹¤ìŠµ1
 #include <iostream>
 #include <string>
 #include <vector>
@@ -21,10 +21,10 @@ public:
 
 	Candy()
 	{
-		cout << "¸À, °¡°İ, ÀÌ¸§, Á¦Á¶»ç¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+		cout << "ë§›, ê°€ê²©, ì´ë¦„, ì œì¡°ì‚¬ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ";
 		cin >> this->m_taste >> this->m_price >> this->m_name >> this->m_company;
 	}
-	void printCompany() override { cout << "Äµµğ Á¦Á¶»ç : " << m_company << endl; }
+	void printCompany() override { cout << "ìº”ë”” ì œì¡°ì‚¬ : " << m_company << endl; }
 };
 
 class Chocolate : public Snack
@@ -34,10 +34,10 @@ public:
 
 	Chocolate()
 	{
-		cout << "¸ğ¾ç, °¡°İ, ÀÌ¸§, Á¦Á¶»ç¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+		cout << "ëª¨ì–‘, ê°€ê²©, ì´ë¦„, ì œì¡°ì‚¬ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ";
 		cin >> this->m_shape >> this->m_price >> this->m_name >> this->m_company;
 	}
-	void printCompany() override { cout << "ÃÊÄİ¸´ Á¦Á¶»ç : " << m_company << endl; }
+	void printCompany() override { cout << "ì´ˆì½œë¦¿ ì œì¡°ì‚¬ : " << m_company << endl; }
 };
 
 int main()
@@ -67,12 +67,12 @@ int main()
 
 /*
 heap
--> ÇÁ·Î±×·¥ÀÌ ½ÇÇàµÇ´Â Áß¿¡ »ç¿ëµÇ´Â ¸Ş¸ğ¸®
--> 100% »ç¿ëÀÚ°¡ °í³ª¸® (new, delete)
--> Á¶±İ ´õ ´À¸²
+-> í”„ë¡œê·¸ë¨ì´ ì‹¤í–‰ë˜ëŠ” ì¤‘ì— ì‚¬ìš©ë˜ëŠ” ë©”ëª¨ë¦¬
+-> 100% ì‚¬ìš©ìê°€ ê³ ë‚˜ë¦¬ (new, delete)
+-> ì¡°ê¸ˆ ë” ëŠë¦¼
 
 stack
-->ÇÁ·Î±×·¥ ½ÇÇà Àü ÇÒ´ç ¸Ş¸ğ¸®
-->new Å°¿öµå ¿Ü ¸ğµç°Í
-->Á¶±İ ´õ ºü¸§, ¿î¿µÃ¼Á¦ º°·Î ¸Ş¸ğ¸® ¿ë·® ÇÑ°è
+->í”„ë¡œê·¸ë¨ ì‹¤í–‰ ì „ í• ë‹¹ ë©”ëª¨ë¦¬
+->new í‚¤ì›Œë“œ ì™¸ ëª¨ë“ ê²ƒ
+->ì¡°ê¸ˆ ë” ë¹ ë¦„, ìš´ì˜ì²´ì œ ë³„ë¡œ ë©”ëª¨ë¦¬ ìš©ëŸ‰ í•œê³„
 */
